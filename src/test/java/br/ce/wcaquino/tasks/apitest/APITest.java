@@ -11,7 +11,10 @@ public class APITest {
 	
 	@BeforeClass
 	public static void setup() {
-		RestAssured.baseURI = "http://localhost:8001/
+		RestAssured.baseURI = "http://localhost:8001/tasks-backend";
+	}
+
+	@Test
 	public void deveRetornarTarefas() {
 		RestAssured.given()
 		.when()
